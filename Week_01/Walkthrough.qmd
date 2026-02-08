@@ -1,0 +1,15 @@
+# Walkthrough
+## Installing packages
+This section is for going over how to download packages and load them into the environment. Packages can be downloaded through CRAN, Bioconductor, or GitHub. 
+
+For installing through CRAN: 
+```{r}
+install.packages("dplyr") #Downloads packages from CRAN and requires quotations 
+library(dplyr) #Loads package into the environment and does not use quotations
+sessionInfo() #Shows you what packes are loaded 
+```
+
+Remember that you can add a ? in front of functions to bring up help pages to better understand how to use them. 
+
+
+
