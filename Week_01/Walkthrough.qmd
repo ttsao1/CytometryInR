@@ -11,5 +11,56 @@ sessionInfo() #Shows you what packes are loaded
 
 Remember that you can add a ? in front of functions to bring up help pages to better understand how to use them. 
 
+Other functions that may be useful: 
+```{r}
+remove.packages("dplyr") #Removes package by uninstalling from computer 
+installed.packages() #Shows packages installed but not yet loaded 
+sessionInfo() #Tells you which packes are loaded into the instance 
+citation(dplyr) #Gives citation information for packages 
+#| eval: FALSE
+```
+
+For installing through bioconductor: 
+```{r}
+install.packages("BiocManager") #CRAN package that allows for downloading from Bioconductor
+library(BiocManager)
+install("PeacoQC") #BiocManager function that installs Bioconductor packages
+library(PeacoQC)
+sessionInfo()
+```
+
+For installing through GitHub: 
+```{r}
+install.packages("remotes") #CRAN package allowing for downloads from GitHub
+library(remotes)
+install_github("hally166/flowSpectrum") #remotes function that installs GitHub packages; hally166 is user and flowSpectrum is package name 
+library(flowSpectrum)
+sessionInfo()
+```
+
+Downloading packages needed for the course: 
+```{r}
+install.packages("purrr") #CRAN
+install("flowCore") #Bioconductor 
+install("flowWorkspace") #Bioconductor 
+#package(s) not installed when version(s) same as or greater than current; use `force = TRUE` to re-install:
+install.packages("stringr") #CRAN
+install.packages("ggplot2") #CRAN
+install("ggcyto") #Bioconductor
+install.packages("tidyr") #CRAN
+install("openCyto") #Bioconductor
+install("FlowSOM") #Bioconductor 
+install.packages("xml2") #CRAN
+install_github("saeyslab/CytoNorm") #GitHub
+install.packages("lubridate") #CRAN
+install.packages("httr2") #CRAN
+install("flowGate") #Bioconductor 
+install.packages("devtools") #CRAN
+install.packages("plotly") #CRAN
+install_github("biosurf/cyCombine") #GitHub
+install("CytoML") #Bioconductor
+install.packages("Rtsne") #CRAN
+install.packages("uwot") #CRAN
+```
 
 
